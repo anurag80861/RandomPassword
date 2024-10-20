@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Random Password Generator</h1>
+        </header>
+
+        <div>
+            <h1 id="newPass"></h1>
+            <i class="fa-regular fa-copy" id="copyBtn"></i>
+        </div>
+
+        <div>
+            <input type="range" id="range" min="6" max="20" value="8">
+            <p id="rangeVal">8</p>
+        </div>
+
+        <form action="">
+            <input type="checkbox" name="caplet" id="caplet">
+            <label for="caplet">Uppercase</label>
+            <br>
+            <input type="checkbox" name="smalet" id="smalet">
+            <label for="smalet">Lowercase</label>
+            <br>
+            <input type="checkbox" name="number" id="number">
+            <label for="number">Number</label>
+            <br>
+            <input type="checkbox" name="symbol" id="symbol">
+            <label for="symbol">Symbol</label>
+        </form>
+
+        <button id="genPass">Generate Password</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
